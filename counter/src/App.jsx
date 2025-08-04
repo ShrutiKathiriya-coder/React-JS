@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../public/css/App.css";
 
 function App() {
-  // Counter state
+ //syntax =let[status,function]=usestate([defaultvalue])
   let [count, setCount] = useState(0);
 
   // Increment 
