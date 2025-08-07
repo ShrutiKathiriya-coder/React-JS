@@ -66,7 +66,7 @@ function App() {
               Swarrnim Startup & Innovation University (2024-2026)
             </li>
             <li>
-              <strong>12th Science</strong> <br />
+              <strong>H.S.C Education</strong> <br />
               Kaushal Vidyabhavan, Surat (2022-2023)
             </li>
           </ul>
