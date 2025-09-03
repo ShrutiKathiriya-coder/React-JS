@@ -26,16 +26,16 @@ This project demonstrates form handling, state management, and clean UI design u
 product-management/
 │── src/
 │ ├── components/
-│ │ ├── Navbar.tsx # Top navigation bar
-│ │ ├── ProductForm.tsx # Product add/display form
-│ ├── assets/ # Images & icons
-│ ├── App.tsx # Main entry component
-│ ├── main.tsx # React DOM render
+│ │ ├── Navbar.tsx 
+│ │ ├── form.tsx 
+│ ├── assets/ 
+│ ├── App.tsx
+│ ├── main.tsx 
 │── public/ # Static files
-│── package.json # Dependencies & scripts
-│── tailwind.config.js # Tailwind configuration
-│── tsconfig.json # TypeScript configuration
-│── vite.config.ts # Vite configuration
+│── package.json 
+│── tailwind.config.js 
+│── tsconfig.json
+│── vite.config.ts 
 │── README.md # Project documentation
 
 ## ⚙️ Installation
