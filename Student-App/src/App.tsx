@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-import StudentForm from "./components/Studentform"
+import StudentForm from "./components/form"
 
 
 export default function App() {

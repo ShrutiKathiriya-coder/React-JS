@@ -31,7 +31,7 @@ It includes:
   src/
 ├── components/
 │ ├── Navbar.tsx
-│ └── ProductForm.tsx
+│ └──Form.tsx
 ├── App.tsx
 ├── main.tsx
 └── index.css
