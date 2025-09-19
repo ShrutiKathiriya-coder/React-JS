@@ -29,7 +29,7 @@ export default function App() {
     }
   return (
   <>
-    <div className="w-full h-screen" style={{backgroundColor: theme==='light' ? "white" : "black"}}>
+    <div className="w-full" style={{backgroundColor: theme==='light' ? "white" : "black"}}>
     <Navbar theme={theme} toggle={toggle}/>
     <div className='pt-14'>
       <Studentform/> 

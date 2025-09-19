@@ -366,63 +366,84 @@ function Studentform() {
 
 
       {/* Student Table */}
-      <div className="max-w-5xl mx-auto mt-10">
-        <h2 className="text-2xl font-semibold text-center mb-4c dark:text-white ">
-          Students List
-        </h2>
-        <div className="overflow-x-auto shadow-md rounded-lg border">
-          <table className="w-full text-sm text-left">
-            <thead className="bg-gray-100">
-              <tr>
-                <th className="px-4 py-2">No</th>
-                <th className="px-4 py-2">First Name</th>
-                <th className="px-4 py-2">Last Name</th>
-                <th className="px-4 py-2">Email</th>
-                <th className="px-4 py-2">Phone</th>
-                <th className="px-4 py-2">Gender</th>
-                <th className="px-4 py-2">Std</th>
-                <th className="px-4 py-2">Hobby</th>
-                <th className="px-4 py-2 text-center">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {allStudents.map((stud, index) => (
-                <tr key={index} className="border-b">
-                  <td className="px-4 py-2">{index + 1}</td>
-                  <td className="px-4 py-2">{stud.fname}</td>
-                  <td className="px-4 py-2">{stud.lname}</td>
-                  <td className="px-4 py-2">{stud.email}</td>
-                  <td className="px-4 py-2">{stud.phone}</td>
-                  <td className="px-4 py-2">{stud.gender}</td>
-                  <td className="px-4 py-2">{stud.std}</td>
-                  <td className="px-4 py-2">{stud.hobby.join(", ")}</td>
-                  <td className="px-4 py-2 flex gap-2 justify-center">
-                    <button
-                      onClick={() => editStudent(index)}
-                      className="px-3 py-1 rounded bg-yellow-400 hover:bg-yellow-500 text-white text-xs"
-                    >
-                      Edit
-                    </button>
-                    <button
-                      onClick={() => deleteStudent(index)}
-                      className="px-3 py-1 rounded bg-red-500 hover:bg-red-600 text-white text-xs"
-                    >
-                      Delete
-                    </button>
-                  </td>
-                </tr>
-              ))}
-              {allStudents.length === 0 && (
-                <tr>
-                  <td colSpan={9} className="text-center py-4 text-gray-500">
-                    No students added yet.
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
+     <div className="max-w-6xl mx-auto mt-12 px-4">
+  {/* Card Container */}
+  <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl overflow-hidden border dark:border-gray-700">
+    
+    {/* Header Section */}
+    <div className="flex items-center justify-between p-6 border-b dark:border-gray-700">
+      <h2 className="text-2xl  font-semibold text-gray-800 dark:text-gray-100">
+        🎓 Students List
+      </h2>
+      
+    </div>
+
+    {/* Table Section */}
+    <div className="overflow-x-auto">
+      <table className="w-full text-sm text-left">
+        <thead className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 uppercase text-xs">
+          <tr>
+            <th className="px-6 py-3">No</th>
+            <th className="px-6 py-3">First Name</th>
+            <th className="px-6 py-3">Last Name</th>
+            <th className="px-6 py-3">Email</th>
+            <th className="px-6 py-3">Phone</th>
+            <th className="px-6 py-3">Gender</th>
+            <th className="px-6 py-3">Std</th>
+            <th className="px-6 py-3">Hobby</th>
+            <th className="px-6 py-3 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {allStudents.map((stud, index) => (
+            <tr
+              key={index}
+              className="bg-white dark:bg-gray-900 border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+            >
+              <td className="px-6 py-4 font-medium text-gray-900 dark:text-white">
+                {index + 1}
+              </td>
+              <td className="px-6 py-4 dark:text-white">{stud.fname}</td>
+              <td className="px-6 py-4 dark:text-white">{stud.lname}</td>
+              <td className="px-6 py-4 dark:text-white">{stud.email}</td>
+              <td className="px-6 py-4 dark:text-white">{stud.phone}</td>
+              <td className="px-6 py-4 dark:text-white">{stud.gender}</td>
+              <td className="px-6 py-4 dark:text-white">{stud.std}</td>
+              <td className="px-6 py-4 dark:text-white">
+                {stud.hobby.join(", ")}
+              </td>
+              <td className="px-6 py-4 flex gap-2 justify-center">
+                <button
+                  onClick={() => editStudent(index)}
+                  className="px-3 py-1 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-white text-xs shadow transition"
+                >
+                  ✏️ Edit
+                </button>
+                <button
+                  onClick={() => deleteStudent(index)}
+                  className="px-3 py-1 rounded-lg bg-red-500 hover:bg-red-600 text-white text-xs shadow transition"
+                >
+                  🗑 Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+          {allStudents.length === 0 && (
+            <tr>
+              <td
+                colSpan={9}
+                className="text-center py-6 text-gray-500 dark:text-gray-400"
+              >
+                No students added yet.
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 
       <ToastContainer />
     </>
