@@ -61,7 +61,7 @@ npm run build
 ![Light Mode](./src/assets/std2.PNG)
 
 ### 🔹 Dark Mode
-![Dark Mode](./src//assets//std2.PNG)
+![Dark Mode](./src//assets//std1.PNG)
 
 
 📦 Tech Stack
