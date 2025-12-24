@@ -1,5 +1,5 @@
 export interface Member {
-    _id: string; // Backend usually returns _id
+    _id: string; 
     name: string;
     age: number;
     membershipType: string;
