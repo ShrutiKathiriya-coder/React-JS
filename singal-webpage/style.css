@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 50%;
+  background-color: #d6d6d6;
+
+  background-image: url("hand.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 380px;
+
+  padding: 60px;
+}
+
+.brand {
+  color: #e6ff00;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.left h1 {
+  margin-top: 70px;
+  font-size: 76px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.arrow {
+  margin: 20px 0;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.left h3 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.left p {
+  width: 260px;
+  font-size: 14px;
+  color: #555;
+}
+
+.left button {
+  margin-top: 20px;
+  background: #e6ff00;
+  border: none;
+  padding: 10px 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.right {
+  width: 50%;
+  background: #e6ff00;
+  padding: 60px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.right h2 {
+  font-size: 36px;
+}
+
+.info {
+  margin: 10px 0 30px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  height: 130px;
+  resize: none;
+  margin-bottom: 25px;
+}
+
+.submit {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 34px;
+  cursor: pointer;
+}
